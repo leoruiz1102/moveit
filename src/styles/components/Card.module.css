@@ -1,0 +1,63 @@
+.cardContainer {
+    height: 96px;
+    margin: 0.3rem 0;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--white);
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+
+}
+
+.position {
+    width: 74px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--background);
+}
+
+.user {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-left: 2px solid var(--background);
+}
+
+.user > img{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user > div > strong {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    color: var(--title);
+}
+
+.user > div > p {
+    margin-top: 0.25rem;
+    display: flex;
+    line-height: 1.35rem;
+    align-items: center;
+}
+
+.user > div > p > img {
+    margin-right: 0.6rem;
+}
+
+.cardContainer > p {
+    width: 140px;
+    font-size: 1.15rem;
+}
+
+.cardContainer > p > span{
+    color: var(--blue)
+}

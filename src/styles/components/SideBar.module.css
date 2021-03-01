@@ -1,0 +1,70 @@
+.container {
+    background: linear-gradient(180deg, var(--white), var(--background));
+    width: 80px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > img {
+    padding-top: 0.5rem;
+}
+
+.optionsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container button {
+    margin-bottom: 1rem;
+    width: 100%;
+    color: var(--text);
+    background: transparent;
+    border: 0;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container button.optionActive::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 56px;
+    left: 0px;
+    
+    background: #5965E0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.container button:hover::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 56px;
+    left: 0px;
+
+    background: #5965E0;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.container button:hover {
+    color: var(--blue);
+}
+
+
+.optionActive > svg {
+    color: var(--blue);
+}
+
+.container footer {
+    width: 100%;
+}

@@ -1,0 +1,55 @@
+.rankContainer {
+    height: 100vh;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.rankContainer > strong {
+    font-size: 2.25rem;
+    color: var(--title);
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.rankContainer > header {
+    width: 100%;
+
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.rankContainer > header > span {
+    font-size: 0.93rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.rankContainer > header > span:first-child {
+    width: 72px;
+}
+
+.rankContainer > header > span:first-child + span {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.rankContainer > header > span:last-child {
+    width: 140px;
+}
+
+.rankContainer > header > span:nth-last-child(-n+2) {
+    width: 140px;
+}
+
+.fakeCard {
+    height: 96px;
+    background: linear-gradient(to right, var(--gray-line), var(--background));
+    margin: 0.3rem 0;
+    border-radius: 6px;
+}

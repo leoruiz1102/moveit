@@ -1,0 +1,121 @@
+.container {
+    height: 100vh;
+    background: var(--blue);
+    display: flex;
+    position: relative;
+}
+
+.errorBox {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #fc9090;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+.errorBox p {
+    padding: 0 1rem;
+    color: var(--text)
+}
+
+.errorBox > button {
+    border: none;
+    display: flex;
+    background: transparent;
+}
+
+.simble {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    flex: 1;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginSection {
+    height: 50%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.loginSection > img {
+    padding-bottom: 7.5rem;
+}
+
+.loginSection > strong {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--white);
+
+    padding-bottom: 2rem;
+}
+
+.description {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    color: var(--gray-line);
+    width: 318px;
+    margin-bottom: 2.5rem;
+}
+
+.description > svg {
+    margin-right: 30px;
+}
+
+.description > p {
+    width: 60%;
+    line-height: 1.5rem;
+}
+
+.loginForm {
+    width: 75%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.loginForm > input {
+    flex: 1;
+    height: 100%;
+    background: linear-gradient(to right, var(--blue-dark), var(--blue));
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding-left: 1.25rem;
+    outline: none;
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.loginForm > input:focus {
+    border: 2px solid var(--blue-dark);
+}
+
+.loginForm > input::placeholder {
+    color: var(--gray-line);
+}
+
+.loginForm > button {
+    height: 80px;
+    width: 80px;
+    background: var(--blue-dark);
+    border: 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.loginAble {
+    background: var(--green)!important;
+}
